@@ -177,6 +177,9 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+# Set screen saver to Flurry
+defaults -currentHost write com.apple.screensaver modulePath -string “/System/Library/Screen Savers/Flurry.saver”
+
 # Save screenshots to the desktop
 defaults write com.apple.screencapture location -string "$HOME/Desktop"
 
